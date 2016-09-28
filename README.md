@@ -1,7 +1,7 @@
 # sdss_fits_cutout
-## A somewhat kludgy script to generate FITS cutouts from SDSS data
+#### A somewhat kludgy script to generate FITS cutouts from SDSS data
 
-The script is written in Perl, with dependencies on IDL, the IDL astronomy library (http://idlastro.gsfc.nasa.gov/), and Montage (http://montage.ipac.caltech.edu/). Hardcoded variables in it point to the location of these and need to be edited.
+The script is written in Perl, with dependencies on IDL, the IDL astronomy library (http://idlastro.gsfc.nasa.gov/), and Montage (http://montage.ipac.caltech.edu/). Hardcoded variables in it point to the location of these and need to be edited. I've not actually tested it again since I last worked on it in April 2015.
 
 It reads a CSV file of objid, ra, dec, run, rerun, camcol, field, and petrorad. It acquires all fields with coverage within 10x the Petrosian radius.
 
