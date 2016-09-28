@@ -7,11 +7,11 @@ It reads a CSV file of objid, ra, dec, run, rerun, camcol, field, and petrorad. 
 
 In the process of generating the cutouts it maintains a list of successfully created objects ($inputfile.goodlist.txt) and of a status code for those where an issue was hit ($inputfile.status.txt). You should only get issues at the edge of the survey footprint I think...
 
-It expects to be working in a directory with subdirectories:
-archive - holding a cache of previously downloaded files - might need to be cleared if a download fails
-mosaic/proj - Montage working directory
-mosaic/diff - " 
-mosaic/corr - "
+It expects to be working in a directory with subdirectories:  
+archive - holding a cache of previously downloaded files - might need to be cleared if a download fails  
+mosaic/proj - Montage working directory  
+mosaic/diff - "   
+mosaic/corr - "  
 
 Line 175 defines how big the cutout should be for an object - currently scales to the Petrosian radius.
 
